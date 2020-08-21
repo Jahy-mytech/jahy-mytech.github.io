@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+title:Hello!
+## Welcome to the MyTech Specialist script repository 
 
-You can use the [editor on GitHub](https://github.com/Jahy-mytech/jahy-mytech.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+These codes can be ran by copying and pasting them into Notepad, and then saving as a .bat file.
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Title = MyTech Specialist Win10 Cleaner
 
-- Bulleted
-- List
+@echo off
+echo Deleting temp files...
+	del "%tmp%\*.*" /s /q /f
+	FOR /d %%p IN ("%tmp%\*.*") DO rmdir "%%p" /s /q
+echo Temp files deleted
+echo Deleting cookies...
 
-1. Numbered
-2. List
+ping localhost -n 3 >nul
 
-**Bold** and _Italic_ and `Code` text
+del /f /q "%userprofile%\Cookies\*.*"
+echo Cookies deleted
+echo Starting disk cleanup
+c:\windows\system32\cleanmgr.exe /dc /sageset: 1
+c:
+cd \
+cd c:\windows\prefetch
+del *.* /q
+echo Disk cleanup started
+pause
 
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Jahy-mytech/jahy-mytech.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
