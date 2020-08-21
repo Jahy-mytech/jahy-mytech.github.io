@@ -6,13 +6,13 @@ If you have any issues you can contact me on Discord: Jahy#1948
 These codes can be ran by copying and pasting them into Notepad, and then saving as a .bat file.
 The purpose of these codes are to easily delivery on the more frequently asked questions in the MyTech discord, such as checking RAM speed, freeing up space in Windows, checking hardware, etc. If you have any suggestions feel free to let me know. Thanks.
 
-# RAM Check Tool
+## RAM Check Tool
 ```
 title = RAM Check
 wmic memorychip get devicelocator, speed, manufacturer, status, serialnumber
 ```
 
-# Windows 10 Quick Clean
+## Windows 10 Quick Clean
 ```
 Title = MyTech Specialist Quick Clean
 @echo off
